@@ -1,5 +1,6 @@
 import ElementBase from '../../basic-element-base/src/ElementBase';
 import ContentFirstChildTarget from '../../basic-component-mixins/src/ContentFirstChildTarget';
+import CustomStyle from '../../basic-component-mixins/src/CustomStyle';
 import DirectionSelection from '../../basic-component-mixins/src/DirectionSelection';
 import DistributedChildrenAsContent from '../../basic-component-mixins/src/DistributedChildrenAsContent';
 import Generic from '../../basic-component-mixins/src/Generic';
@@ -17,6 +18,7 @@ let idCount = 0;
 
 let base = ElementBase.compose(
   ContentFirstChildTarget,
+  CustomStyle,
   DirectionSelection,
   DistributedChildrenAsContent,
   Generic,
